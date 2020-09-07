@@ -1,0 +1,21 @@
+{
+  "name": "eliteclub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/main.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/prefix.css -o css/main.css",
+    "build": "./node_modules/.bin/babel src -d js -w"
+  },
+  "author": "Techpentagon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "auto-prefixer": "^0.4.2",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.2"
+  }
+}
